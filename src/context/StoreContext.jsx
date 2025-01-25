@@ -17,9 +17,9 @@ const StoreContextProvider = (props) => {
     SetCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
 
-  useEffect(() => {
-    console.log(cartItems);
-  }, [cartItems]);
+  const getTotalCartAmount = () => {
+    let totalAmount = 0;
+  };
 
   const contextValue = {
     food_list,
